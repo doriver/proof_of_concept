@@ -3,6 +3,7 @@ package com.practice.poc.controller;
 import com.practice.poc.controller.service.FirstService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -18,6 +19,12 @@ public class FirstController {
     @RequestMapping("/first")
     public String hello() {
         return "hello world";
+    }
+
+    @RequestMapping("/first/view")
+    public String helloView(Model model) {
+        model.addAttribute("message","attributeValue");
+        return "first";
     }
 
     @ResponseBody
