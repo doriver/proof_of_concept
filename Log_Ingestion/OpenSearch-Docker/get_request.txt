@@ -1,0 +1,6 @@
+http://localhost:9200
+http://localhost:9200/_cluster/health
+http://localhost:9200/_cat/indices?v
+http://localhost:9200/_index_template/(인덱스 템플릿 이름)
+http://localhost:9200/인덱스이름
+http://localhost:9200/인덱스이름/_search

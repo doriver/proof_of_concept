@@ -1,0 +1,295 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+9.2.0-dev,True,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+9.2.0-dev,True,base,labels,object,core,,"{""application"": ""foo-bar"", ""env"": ""production""}",Custom key/value pairs.
+9.2.0-dev,True,base,message,match_only_text,core,,Hello World,Log message optimized for viewing in a log viewer.
+9.2.0-dev,True,base,tags,keyword,core,array,"[""production"", ""env2""]",List of keywords used to tag each event.
+9.2.0-dev,True,agent,agent.build.original,keyword,core,,"metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c built 2020-02-05 23:10:10 +0000 UTC]",Extended build information for the agent.
+9.2.0-dev,True,agent,agent.id,keyword,core,,8a4f500d,Unique identifier of this agent.
+9.2.0-dev,True,agent,agent.name,keyword,core,,foo,Custom name of the agent.
+9.2.0-dev,True,agent,agent.type,keyword,core,,filebeat,Type of the agent.
+9.2.0-dev,True,agent,agent.version,keyword,core,,6.0.0-rc2,Version of the agent.
+9.2.0-dev,True,client,client.bytes,long,core,,184,Bytes sent from the client to the server.
+9.2.0-dev,True,client,client.domain,keyword,core,,foo.example.com,The domain name of the client.
+9.2.0-dev,True,client,client.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,client,client.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,client,client.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,client,client.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,client,client.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,client,client.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,client,client.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,client,client.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,client,client.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,client,client.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,client,client.ip,ip,core,,,IP address of the client.
+9.2.0-dev,True,client,client.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the client.
+9.2.0-dev,True,client,client.packets,long,core,,12,Packets sent from the client to the server.
+9.2.0-dev,True,client,client.port,long,core,,,Port of the client.
+9.2.0-dev,True,client,client.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,client,client.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,client,client.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,container,container.id,keyword,core,,,Unique container id.
+9.2.0-dev,True,destination,destination.bytes,long,core,,184,Bytes sent from the destination to the source.
+9.2.0-dev,True,destination,destination.domain,keyword,core,,foo.example.com,The domain name of the destination.
+9.2.0-dev,True,destination,destination.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,destination,destination.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,destination,destination.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,destination,destination.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,destination,destination.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,destination,destination.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,destination,destination.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,destination,destination.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,destination,destination.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,destination,destination.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,destination,destination.ip,ip,core,,,IP address of the destination.
+9.2.0-dev,True,destination,destination.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the destination.
+9.2.0-dev,True,destination,destination.packets,long,core,,12,Packets sent from the destination to the source.
+9.2.0-dev,True,destination,destination.port,long,core,,,Port of the destination.
+9.2.0-dev,True,destination,destination.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,destination,destination.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,destination,destination.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,device,device.serial_number,keyword,core,,DJGAQS4CW5,Serial Number of the device
+9.2.0-dev,True,dll,dll.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,dll,dll.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,dll,dll.name,keyword,core,,kernel32.dll,Name of the library.
+9.2.0-dev,True,ecs,ecs.version,keyword,core,,1.0.0,ECS version this event conforms to.
+9.2.0-dev,True,error,error.code,keyword,core,,,Error code describing the error.
+9.2.0-dev,True,error,error.id,keyword,core,,,Unique identifier for the error.
+9.2.0-dev,True,error,error.message,match_only_text,core,,,Error message.
+9.2.0-dev,True,event,event.action,keyword,core,,user-password-change,The action captured by the event.
+9.2.0-dev,True,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
+9.2.0-dev,True,event,event.created,date,core,,2016-05-23T08:05:34.857Z,Time when the event was first read by an agent or by your pipeline.
+9.2.0-dev,True,event,event.dataset,keyword,core,,apache.access,Name of the dataset.
+9.2.0-dev,True,event,event.duration,long,core,,,Duration of the event in nanoseconds.
+9.2.0-dev,True,event,event.id,keyword,core,,8a4f500d,Unique ID to describe the event.
+9.2.0-dev,True,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+9.2.0-dev,True,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
+9.2.0-dev,True,event,event.module,keyword,core,,apache,Name of the module this data is coming from.
+9.2.0-dev,False,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
+9.2.0-dev,True,event,event.outcome,keyword,core,,success,The outcome of the event. The lowest level categorization field in the hierarchy.
+9.2.0-dev,True,event,event.risk_score,float,core,,,Risk score or priority of the event (e.g. security solutions). Use your system's original value here.
+9.2.0-dev,True,event,event.severity,long,core,,7,Numeric severity of the event.
+9.2.0-dev,True,event,event.type,keyword,core,array,,Event type. The third categorization field in the hierarchy.
+9.2.0-dev,True,file,file.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,file,file.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,host,host.architecture,keyword,core,,x86_64,Operating system architecture.
+9.2.0-dev,True,host,host.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,host,host.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,host,host.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,host,host.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,host,host.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,host,host.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,host,host.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,host,host.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,host,host.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,host,host.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,host,host.hostname,keyword,core,,,Hostname of the host.
+9.2.0-dev,True,host,host.id,keyword,core,,,Unique host id.
+9.2.0-dev,True,host,host.ip,ip,core,array,,Host ip addresses.
+9.2.0-dev,True,host,host.mac,keyword,core,array,"[""00-00-5E-00-53-23"", ""00-00-5E-00-53-24""]",Host MAC addresses.
+9.2.0-dev,True,host,host.name,keyword,core,,,Name of the host.
+9.2.0-dev,True,host,host.type,keyword,core,,,Type of host.
+9.2.0-dev,True,log,log.level,keyword,core,,error,Log level of the log event.
+9.2.0-dev,True,log,log.logger,keyword,core,,org.elasticsearch.bootstrap.Bootstrap,Name of the logger.
+9.2.0-dev,True,network,network.bytes,long,core,,368,Total bytes transferred in both directions.
+9.2.0-dev,True,network,network.direction,keyword,core,,inbound,Direction of the network traffic.
+9.2.0-dev,True,network,network.forwarded_ip,ip,core,,192.1.1.2,Host IP address when the source IP address is the proxy.
+9.2.0-dev,True,network,network.packets,long,core,,24,Total packets transferred in both directions.
+9.2.0-dev,True,network,network.protocol,keyword,core,,http,Application protocol name.
+9.2.0-dev,True,network,network.transport,keyword,core,,tcp,Protocol Name corresponding to the field `iana_number`.
+9.2.0-dev,True,network,network.type,keyword,core,,ipv4,"In the OSI Model this would be the Network Layer. ipv4, ipv6, ipsec, pim, etc"
+9.2.0-dev,True,observer,observer.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,observer,observer.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,observer,observer.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,observer,observer.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,observer,observer.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,observer,observer.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,observer,observer.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,observer,observer.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,observer,observer.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,observer,observer.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,observer,observer.hostname,keyword,core,,,Hostname of the observer.
+9.2.0-dev,True,observer,observer.ip,ip,core,array,,IP addresses of the observer.
+9.2.0-dev,True,observer,observer.mac,keyword,core,array,"[""00-00-5E-00-53-23"", ""00-00-5E-00-53-24""]",MAC addresses of the observer.
+9.2.0-dev,True,observer,observer.type,keyword,core,,firewall,The type of the observer the data is coming from.
+9.2.0-dev,True,observer,observer.vendor,keyword,core,,Symantec,Vendor name of the observer.
+9.2.0-dev,True,observer,observer.version,keyword,core,,,Observer version.
+9.2.0-dev,True,process,process.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,process,process.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,process,process.entry_leader.attested_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.entry_leader.attested_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.attested_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.entry_meta.source.ip,ip,core,,,IP address of the source.
+9.2.0-dev,True,process,process.entry_leader.parent.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.entry_leader.parent.session_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.entry_leader.parent.session_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.entry_leader.parent.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.entry_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.entry_leader.real_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.entry_leader.real_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.real_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.saved_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.entry_leader.saved_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.saved_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.entry_leader.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.entry_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.group_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.group_leader.real_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.group_leader.real_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.real_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.saved_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.group_leader.saved_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.saved_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.group_leader.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.group_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.parent.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,process,process.parent.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,process,process.parent.group_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.parent.group_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.parent.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.parent.real_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.parent.real_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.real_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.saved_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.parent.saved_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.saved_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.parent.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.parent.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.real_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.real_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.real_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.saved_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.saved_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.saved_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.parent.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.session_leader.parent.session_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.session_leader.parent.session_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.session_leader.parent.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.session_leader.pid,long,core,,4242,Process id.
+9.2.0-dev,True,process,process.session_leader.real_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.session_leader.real_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.real_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.saved_user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.session_leader.saved_user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.saved_user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.session_leader.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.session_leader.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,process,process.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,process,process.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,process,process.vpid,long,core,,4242,Virtual process id.
+9.2.0-dev,True,registry,registry.data.strings,wildcard,core,array,"[""C:\rta\red_ttp\bin\myapp.exe""]",List of strings representing what was written to the registry.
+9.2.0-dev,True,registry,registry.data.type,keyword,core,,REG_SZ,Standard registry type for encoding contents
+9.2.0-dev,True,registry,registry.hive,keyword,core,,HKLM,Abbreviated name for the hive.
+9.2.0-dev,True,registry,registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
+9.2.0-dev,True,registry,registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
+9.2.0-dev,True,registry,registry.value,keyword,core,,Debugger,Name of the value written.
+9.2.0-dev,True,server,server.bytes,long,core,,184,Bytes sent from the server to the client.
+9.2.0-dev,True,server,server.domain,keyword,core,,foo.example.com,The domain name of the server.
+9.2.0-dev,True,server,server.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,server,server.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,server,server.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,server,server.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,server,server.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,server,server.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,server,server.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,server,server.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,server,server.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,server,server.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,server,server.ip,ip,core,,,IP address of the server.
+9.2.0-dev,True,server,server.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the server.
+9.2.0-dev,True,server,server.packets,long,core,,12,Packets sent from the server to the client.
+9.2.0-dev,True,server,server.port,long,core,,,Port of the server.
+9.2.0-dev,True,server,server.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,server,server.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,server,server.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,service,service.id,keyword,core,,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6,Unique identifier of the running service.
+9.2.0-dev,True,service,service.name,keyword,core,,elasticsearch-metrics,Name of the service.
+9.2.0-dev,True,service,service.origin.id,keyword,core,,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6,Unique identifier of the running service.
+9.2.0-dev,True,service,service.origin.name,keyword,core,,elasticsearch-metrics,Name of the service.
+9.2.0-dev,True,service,service.origin.state,keyword,core,,,Current state of the service.
+9.2.0-dev,True,service,service.origin.type,keyword,core,,elasticsearch,The type of the service.
+9.2.0-dev,True,service,service.origin.version,keyword,core,,3.2.4,Version of the service.
+9.2.0-dev,True,service,service.state,keyword,core,,,Current state of the service.
+9.2.0-dev,True,service,service.target.id,keyword,core,,d37e5ebfe0ae6c4972dbe9f0174a1637bb8247f6,Unique identifier of the running service.
+9.2.0-dev,True,service,service.target.name,keyword,core,,elasticsearch-metrics,Name of the service.
+9.2.0-dev,True,service,service.target.state,keyword,core,,,Current state of the service.
+9.2.0-dev,True,service,service.target.type,keyword,core,,elasticsearch,The type of the service.
+9.2.0-dev,True,service,service.target.version,keyword,core,,3.2.4,Version of the service.
+9.2.0-dev,True,service,service.type,keyword,core,,elasticsearch,The type of the service.
+9.2.0-dev,True,service,service.version,keyword,core,,3.2.4,Version of the service.
+9.2.0-dev,True,source,source.bytes,long,core,,184,Bytes sent from the source to the destination.
+9.2.0-dev,True,source,source.domain,keyword,core,,foo.example.com,The domain name of the source.
+9.2.0-dev,True,source,source.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,source,source.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,source,source.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,source,source.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,source,source.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,source,source.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,source,source.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,source,source.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,source,source.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,source,source.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,source,source.ip,ip,core,,,IP address of the source.
+9.2.0-dev,True,source,source.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the source.
+9.2.0-dev,True,source,source.packets,long,core,,12,Packets sent from the source to the destination.
+9.2.0-dev,True,source,source.port,long,core,,,Port of the source.
+9.2.0-dev,True,source,source.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,source,source.user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,source,source.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,threat,threat.enrichments.indicator.file.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,threat,threat.enrichments.indicator.file.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,threat,threat.enrichments.indicator.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.data.strings,wildcard,core,array,"[""C:\rta\red_ttp\bin\myapp.exe""]",List of strings representing what was written to the registry.
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.data.type,keyword,core,,REG_SZ,Standard registry type for encoding contents
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.hive,keyword,core,,HKLM,Abbreviated name for the hive.
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
+9.2.0-dev,True,threat,threat.enrichments.indicator.registry.value,keyword,core,,Debugger,Name of the value written.
+9.2.0-dev,True,threat,threat.indicator.file.code_signature.exists,boolean,core,,true,Boolean to capture if a signature is present.
+9.2.0-dev,True,threat,threat.indicator.file.code_signature.subject_name,keyword,core,,Microsoft Corporation,Subject name of the code signer
+9.2.0-dev,True,threat,threat.indicator.geo.city_name,keyword,core,,Montreal,City name.
+9.2.0-dev,True,threat,threat.indicator.geo.continent_code,keyword,core,,,Continent code.
+9.2.0-dev,True,threat,threat.indicator.geo.continent_name,keyword,core,,North America,Name of the continent.
+9.2.0-dev,True,threat,threat.indicator.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+9.2.0-dev,True,threat,threat.indicator.geo.country_name,keyword,core,,Canada,Country name.
+9.2.0-dev,True,threat,threat.indicator.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+9.2.0-dev,True,threat,threat.indicator.geo.postal_code,keyword,core,,94040,Postal code.
+9.2.0-dev,True,threat,threat.indicator.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+9.2.0-dev,True,threat,threat.indicator.geo.region_name,keyword,core,,Quebec,Region name.
+9.2.0-dev,True,threat,threat.indicator.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+9.2.0-dev,True,threat,threat.indicator.registry.data.strings,wildcard,core,array,"[""C:\rta\red_ttp\bin\myapp.exe""]",List of strings representing what was written to the registry.
+9.2.0-dev,True,threat,threat.indicator.registry.data.type,keyword,core,,REG_SZ,Standard registry type for encoding contents
+9.2.0-dev,True,threat,threat.indicator.registry.hive,keyword,core,,HKLM,Abbreviated name for the hive.
+9.2.0-dev,True,threat,threat.indicator.registry.key,keyword,core,,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe,Hive-relative path of keys.
+9.2.0-dev,True,threat,threat.indicator.registry.path,keyword,core,,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\winword.exe\Debugger,"Full path, including hive, key and value"
+9.2.0-dev,True,threat,threat.indicator.registry.value,keyword,core,,Debugger,Name of the value written.
+9.2.0-dev,True,user,user.changes.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,user,user.changes.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.changes.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.effective.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,user,user.effective.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.effective.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.target.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+9.2.0-dev,True,user,user.target.name,keyword,core,,a.einstein,Short name or login of the user.
+9.2.0-dev,True,user,user.target.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
