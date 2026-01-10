@@ -17,3 +17,7 @@ spring:
         show_sql: 'true'
         default_batch_fetch_size: 10
     database-platform: org.hibernate.dialect.MySQLDialect
+  data:
+    redis:
+      host: localhost # WSL에 있는 Redis에도 접근 가능( WSL의 localhost 포워딩 기능 덕분에 )
+      port: 6379
