@@ -1,6 +1,7 @@
 package com.practice.poc.controller;
 
 import com.practice.poc.controller.service.FirstService;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ public class FirstController {
 
     @ResponseBody
     @RequestMapping("/first")
+    @Operation(summary = "hello world")
     public String hello() {
         return "hello world";
     }
